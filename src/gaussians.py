@@ -51,7 +51,6 @@ def plot_data_and_generating_distrib(data, loc=0, scale=1, size=250, bins=20, fi
     plt.legend()
     if filepath:
         if not os.path.exists(os.path.dirname(filepath)):
-        	print("Making dirs!")
             os.makedirs(os.path.exists(os.path.dirname(filepath)))
         plt.savefig(filepath)
         
